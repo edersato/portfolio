@@ -19,7 +19,7 @@ body {
     font-size: 14px;
     }
   }
-@media (min-widht: 600px) {
+  @media (min-widht: 600px) {
     body {
       font-size: 18px;
     }
@@ -79,7 +79,7 @@ header {
 
   .img-portfolio {
     height: 100px;
-    width: 120px;
+    width: 100px;
     align-content: center;
   }
 
