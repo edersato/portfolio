@@ -19,7 +19,7 @@ body {
     font-size: 14px;
     }
   }
-  @media (min-widht: 600px) {
+@media (min-widht: 600px) {
     body {
       font-size: 18px;
     }
