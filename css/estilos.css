@@ -9,7 +9,7 @@ body {
     background-color: #342e30;
     background-image: linear-gradient(#242122,#45b207,#242122); 
     background-size: auto 250vh;
-    font-family: verdana;
+    font-family: 'Raleway', sans-serif;
     height: 100vh;
     }
 
@@ -25,34 +25,36 @@ body {
     }
   } 
 header {
-  height: 60vh;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 300px;
+  width: auto;
   justify-content: center;
-
 }
 
   .menu {
     background-color: #242122; 
-    border-radius: 25px;
+    border-radius: 15px;
     position: fixed;
     top: 0;
-    width: 100vh;
+    width: 100%;
   }
   .menu ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background-color: #242122;
   }
   
   .menu li {
-    list-style: none;
+    display: inline;
   }
   
   .menu a {
     display: block;
-    padding: 10px 10px;
-    
+    padding: 5px 2px;
+    background-color: #242122;
   }
+
   a {
     color: #45b207;
     text-decoration: none;
@@ -61,34 +63,73 @@ header {
   a:hover {
     text-decoration: underline;
   }
-  
-  
+
   .site-subtitle,
   .site-title  {
-    color: goldenrod;
+    color: #49d101;
     text-align: center;
   }
   
   .site-title {
-    font-size: 6em;
+    font-size: 70px;
+    font-family: 'Bad Script', cursive;
   }
 
   .site-subtitle  {
-    font-style: italic;
+    font-family: 'Neucha', cursive;
+    line-height: 1.5em;
+  }
+
+  .portfolio h2 {
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    color: #242122;
+    margin-bottom: 15px;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+  }
+
+  @media (min-widht: 414px) { 
+    .portfolio .grid {
+    grid-template-columns: 240px 240px 240px;
+    justify-content: center;
+  }   
+  }
+
+  .portfolio figure {
+    text-align: center;
   }
 
   .img-portfolio {
-    height: 100px;
-    width: 100px;
-    align-content: center;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
   }
 
-  .column {
-    float: left;
-    width: 33%;
-    padding: 33px;
+  .portfolio {
+    height: 589px;
+    padding-top: 30px;
+    padding-left: 20px;
   }
 
-.row {
-  display: flex;
-}
+  .contato {
+    background-color: #242122;
+    bottom: 0;
+  }
+
+  .contato figure {
+    text-align: center;
+  }
+
+  .contato .grid {
+    display: grid;
+    gap: 200px;
+    grid-template-columns: repeat(3, 200px);
+  }
+  .contato .img-portfolio {
+    height: 50px;
+    width: 50px;
+  }
