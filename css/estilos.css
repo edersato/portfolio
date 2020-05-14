@@ -11,11 +11,16 @@ body {
     font-family: 'Raleway', sans-serif;
     }
 
-@media (min-width: 414px) {
+@media (max-width: 414px) {
   body {
-    font-size: 12px;
+    font-size: 18px;
   }
-} 
+}
+@media (min-width: 720px) {
+  body {
+    font-size: 35px;
+  }
+}  
 
 header {
   align-items: center;
@@ -24,10 +29,15 @@ header {
   justify-content: center;
 }
 
-@media (min-width: 414px) {
+@media (max-width: 414px) {
   header {
-    justify-content: left;
-    padding-left: 15px;
+    justify-content: center;
+    height: 50vh;
+  }
+}
+@media (min-width: 720px) {
+  header {
+    justify-content: center;
     height: 50vh;
   }
 }
@@ -39,11 +49,18 @@ header {
     top: 0;
     width: 100%;
   }
-@media (min-width: 414px) {
+@media (max-width: 414px) {
   .menu {
     position: fixed;
     top: 0;
-    width: 60%;
+    width: 110%;
+  }
+}
+@media (min-width: 720px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 110%;
   }
 }
   .menu ul {
@@ -51,7 +68,14 @@ header {
     justify-content: space-evenly;
     background-color: #242122;
   }
-@media (min-width: 414px) {
+@media (max-width: 414px) {
+  .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #242122;  
+  }
+}
+@media (min-width: 720px) {
   .menu ul {
     display: flex;
     justify-content: space-evenly;
@@ -62,7 +86,12 @@ header {
     display: flex;
   } 
 
-@media (min-width: 414px) {
+@media (max-width: 414px) {
+  .menu li {
+    display: flex;
+  }
+}
+@media (min-width: 720px) {
   .menu li {
     display: flex;
   }
@@ -74,7 +103,14 @@ header {
     background-color: #242122;
   }
 
-@media (min-width: 414px) {
+@media (max-width: 414px) {
+    .menu a {
+      display: block;
+      padding: 5px 2px;
+      background-color: #242122;
+    }
+  }
+@media (min-width: 720px) {
     .menu a {
       display: block;
       padding: 5px 2px;
@@ -87,7 +123,13 @@ header {
     text-decoration: none;
   }  
 
-@media (min-width: 375px) {
+@media (max-width: 414px) {
+  a {
+    color: #45b207;
+    text-decoration: none;
+  }
+}
+@media (min-width: 720px) {
   a {
     color: #45b207;
     text-decoration: none;
@@ -109,17 +151,25 @@ header {
     font-family: 'Bad Script', cursive;
   }
 
-@media (min-width: 414px) {
+@media (max-width: 414px) {
   .site-title {
-    font-size: 60px;
+    font-size: 80px;
+    font-family: 'Bad Script', cursive; 
+    padding-left: 20px;
+  }
+}
+@media (min-width: 720px) {
+  .site-title {
+    font-size: 90px;
     font-family: 'Bad Script', cursive; 
   }
-} 
-
+}  
   .site-subtitle  {
     font-family: 'Neucha', cursive;
     line-height: 1.5em;
   }
+
+  /*Aqui começa o h2 Serviços*/
 
   .portfolio h2 {
     font-family: 'Bad Script', cursive;
@@ -128,10 +178,18 @@ header {
     margin-bottom: 75px;
   }
 
-@media (min-width: 414px) {
+@media (max-width: 414px) {
   .portfolio h2 {
     font-family: 'Bad Script', cursive;
-    font-size: 30px;
+    font-size: 40px;
+    color: #49d101;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 720px) {
+  .portfolio h2 {
+    font-family: 'Bad Script', cursive;
+    font-size: 80px;
     color: #49d101;
     margin-bottom: 20px;
   }
@@ -142,18 +200,29 @@ header {
     grid-template-columns: 333px 333px 333px;
   }
 
-@media (min-width: 414px) {
+@media (max-width: 414px) {
     .portfolio .grid {
       display: grid;
-      grid-template-columns: 120px 120px;
+      grid-template-columns: repeat(3, 150px);
     }
-  }  
+  }
+@media (min-width: 720px) {
+    .portfolio .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 210px);
+    }
+}  
 
   .portfolio figure {
     text-align: center;
   }
 
-@media (min-width: 375px) {
+@media (max-width: 414px) {
+  .portfolio figure {
+    text-align: center;
+  }
+}
+@media (min-width: 720px) {
   .portfolio figure {
     text-align: center;
   }
@@ -165,10 +234,17 @@ header {
     object-fit: cover;
   }
 
-@media (min-width: 414px) {
+@media (max-width: 414px) {
   .img-portfolio {
-    height: 50px;
-    width: 50px;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 720px) {
+  .img-portfolio {
+    height: 120px;
+    width: 120px;
     object-fit: cover;
   }
 }
@@ -179,13 +255,22 @@ header {
     padding-left: 40px;
   }
 
-  @media (min-width: 414px) {
+@media (max-width: 414px) {
     .portfolio {
       height: 600px;
       padding-top: 10px;
+      padding-left: 20px;
+    }
+  }
+@media (min-width: 720px) {
+    .portfolio {
+      height: 800px;
+      padding-top: 20px;
       padding-left: 10px;
     }
   }
+
+  /*Aqui começa o h3 Contato*/
 
   .contato {
     background-color: #242122;
@@ -193,11 +278,18 @@ header {
     width: 100%;
   }
 
-  @media (min-width: 414px) {
+  @media (max-width: 414px) {
     .contato {
       background-color: #242122;
       bottom: 0px;
-      width: 65%;
+      width: 130%;
+    }
+  }
+  @media (min-width: 720px) {
+    .contato {
+      background-color: #242122;
+      bottom: 0px;
+      width: 100%;
     }
   }
 
@@ -205,7 +297,12 @@ header {
     text-align: center;
   }
 
-  @media (min-width: 414px) {
+  @media (max-width: 414px) {
+    .contato figure {
+      text-align: center;
+    }
+  }
+  @media (min-width: 720px) {
     .contato figure {
       text-align: center;
     }
@@ -217,11 +314,18 @@ header {
     grid-template-columns: repeat(3, 200px);
   }
 
-  @media (min-width: 414px) {
+  @media (max-width: 414px) {
     .contato .grid {
       display: grid;
-      gap: 50px;
-      grid-template-columns: repeat(3, 50px);
+      gap: 100px;
+      grid-template-columns: repeat(3, 100px);
+    }
+  }
+  @media (min-width: 720px) {
+    .contato .grid {
+      display: grid;
+      gap: 130px;
+      grid-template-columns: repeat(3, 130px);
     }
   }
 
@@ -230,9 +334,15 @@ header {
     width: 50px;
   }
 
-  @media (min-width: 414px) {
+  @media (max-width: 414px) {
     .contato .img-portfolio {
-      height: 40px;
-      width: 40px;
+      height: 50px;
+      width: 50px;
+    }
+  }
+  @media (min-width: 720px) {
+    .contato .img-portfolio {
+      height: 100px;
+      width: 100px;
     }
   }
