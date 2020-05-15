@@ -110,7 +110,7 @@ header {
 @media (max-width: 425px) {
   .menu a {
     display: block;
-    padding: 5px 35px;
+    padding: 5px 38px;
     border-radius: 35px;
   }
 }
@@ -124,7 +124,7 @@ header {
 @media (max-width: 1024px) {
   .menu a {
     display: block;
-    padding: 5px 240px;
+    padding: 5px 190px;
     border-radius: 35px;
   }
 }
