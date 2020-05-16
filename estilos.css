@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+header {
+  align-items: center;
+  background-color: #242122;
+  display: flex;
+  height: 340px;
+  justify-content: center;
+}
+
+.menu {
+  background-color: #242122;
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu li {
+list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 25px;
+  background-color: #242122;
+  transition: background-color 1s, color 0.8s;
+}
+
+.menu a:hover {
+  background-color: #45b207;
+  color: #242122;
+}  
+
+a {
+  color: #45b207;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title  {
+  color: #49d101;
+  text-align: center;
+}
+  
+.site-title {
+  font-size: 80px;
+  font-family: 'Bellota Text', cursive;
+}
+
+.site-subtitle  {
+  font-family: 'Big Shoulders Display', cursive;
+  line-height: 1.5em;
+}
+
+  /*Aqui começa o h2 Sobre/Serviços*/
+  
+.sobre {
+  background-color: #242122;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio {
+  background-image: linear-gradient(#242122,#45b207,#242122); 
+  background-size: auto 150vh;
+  height: 516px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+}
+  
+.sobre h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #49d101;
+}
+.portfolio h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 50px;
+  color: #49d101;
+  margin-bottom: 30px;
+}
+
+.sobre p {
+  color: aliceblue;
+  text-align: justify;
+  text-indent: 15px;
+  margin-bottom: 10px;
+}
+
+.sobre .avatar img {
+clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+margin-left: 2em;
+}
+  
+@media (min-width: 600px) {
+  .sobre .avatar {
+    float: left;
+  }
+}
+
+.portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 170px);
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 270px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.img-portfolio {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  object-position: left bottom;
+  transition: transform 500ms;
+}
+
+/*Aqui começa o h3 Contato*/
+
+.contato {
+  background-color: #242122;
+  width: 100%;
+  appearance: ;
+}
+  
+.contato .icons {
+  text-align: center;
+}
+.contato a {
+  color: #49d101;
+  font-size: 40px;
+  padding-left: 40px;
+  transition: text-shadow 1s;
+}
+
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 5px currentColor;
+}
