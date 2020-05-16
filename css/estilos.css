@@ -5,318 +5,201 @@
 }
 
 body {
-  background-color: #342e30;
-    background-image: linear-gradient(#242122,#45b207,#242122); 
-    background-size: auto 250vh;
-    font-family: 'Raleway', sans-serif;
-    }
+  font-family: 'IBM Plex Serif', serif;
+}
 
-@media (min-width: 425px) {
+@media (min-width: 400px) {
   body {
-    font-size: 20px;
-  }
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 20px;
-  }
-}
-@media (min-width: 1024px) {
-  body {
-  font-size: 22px;
+    font-size: 14px;
   }
 }
 
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
 header {
   align-items: center;
+  background-color: #242122;
   display: flex;
-  height: 50vh;
+  height: 340px;
   justify-content: center;
 }
 
-@media (max-width: 425px) {
-  header {
-    justify-content: center;
-    height: 50vh;
-  }
-}
-@media (min-width: 768px) {
-  header {
-    justify-content: center;
-    height: 60vh;
-  }
-}
-@media (min-width: 1024px) {
-  header {
-    height: 60vh;
-    justify-content: center;
-  }
+.menu {
+  background-color: #242122;
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  z-index: 1;
 }
 
-  .menu {
-    background-color: #242122; 
-    border-radius: 25px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-@media (max-width: 425px) {
-  .menu {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .menu {
-    width: 100%;
-  }
-}
-@media (min-width: 1024px) {
-  .menu {
-    width: 100%;
-  }
-}
-  .menu ul {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #242122;
-  }
-@media (max-width: 425px) {
-  .menu ul {
-    justify-content: left;
-  }
-}
-@media (max-width: 768px) {
-  .menu ul {
-    justify-content: left;
-  }
-}
-@media (max-width: 1024px) {
-  .menu ul {
-    justify-content: left;
-  }
-}
-  .menu li {
-    display: flex;
-  }
-
-  .menu a {
-    display: block;
-    padding: 5px 220px;
-    border-radius: 35px;
-    background-color: #242122;
-    transition: background-color 1s, color 0.8s;
-  }
-@media (max-width: 425px) {
-  .menu a {
-    display: block;
-    padding: 5px 38px;
-    border-radius: 35px;
-  }
-}
-@media (max-width: 768px) {
-  .menu a {
-    display: block;
-    padding: 5px 100px;
-    border-radius: 35px;
-  }
-}
-@media (max-width: 1024px) {
-  .menu a {
-    display: block;
-    padding: 5px 190px;
-    border-radius: 35px;
-  }
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-  .menu a:hover {
-    background-color: #45b207;
-    color: #242122;
-  }  
-
-  a {
-    color: #45b207;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  .site-subtitle,
-  .site-title  {
-    color: #49d101;
-    text-align: center;
-  }
-  
-  .site-title {
-    font-size: 80px;
-    font-family: 'Bad Script', cursive;
-  }
-
-@media (max-width: 425px) {
-  .site-title {
-    font-size: 80px;
-    font-family: 'Bad Script', cursive; 
-    padding-left: 20px;
-  }
+.menu li {
+list-style: none;
 }
-@media (min-width: 768px) {
-  .site-title {
-    font-size: 80px;
-    font-family: 'Bad Script', cursive; 
-  }
+
+.menu a {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 25px;
+  background-color: #242122;
+  transition: background-color 1s, color 0.8s;
+}
+
+.menu a:hover {
+  background-color: #45b207;
+  color: #242122;
 }  
-@media (min-width: 1024px) {
-  .site-title {
-    font-size: 100px;
-    font-family: 'Bad Script', cursive; 
-  }
-}  
-  .site-subtitle  {
-    font-family: 'Neucha', cursive;
-    line-height: 1.5em;
-  }
 
-  /*Aqui começa o h2 Serviços*/
-
-  .portfolio h2 {
-    font-family: 'Bad Script', cursive;
-    font-size: 50px;
-    color: #49d101;
-    margin-bottom: 75px;
-  }
-
-@media (max-width: 425px) {
-  .portfolio h2 {
-    font-family: 'Bad Script', cursive;
-    font-size: 50px;
-    color: #49d101;
-    margin-bottom: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .portfolio h2 {
-    font-family: 'Bad Script', cursive;
-    font-size: 60px;
-    color: #49d101;
-    margin-bottom: 20px;
-  }
-} 
-@media (min-width: 1024px) {
-  .portfolio h2 {
-    font-family: 'Bad Script', cursive;
-    font-size: 70px;
-    color: #49d101;
-    margin-bottom: 30px;
-  }
-} 
-
-  .portfolio .grid {
-    display: grid;
-    grid-template-columns: 333px 333px 333px;
-  }
-
-@media (max-width: 425px) {
-    .portfolio .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 130px);
-    }
-  }
-@media (min-width: 768px) {
-    .portfolio .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 250px);
-    }
-} 
-@media (min-width: 1024px) {
-  .portfolio .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 380px);
-  }
+a {
+  color: #45b207;
+  text-decoration: none;
 }
 
-  .portfolio figure {
-    text-align: center;
-  }
-
-  .img-portfolio {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-  }
-
-@media (max-width: 425px) {
-  .img-portfolio {
-    height: 80px;
-    width: 80px;
-    margin-bottom: 20px;
-    object-fit: cover;
-  }
-}
-@media (min-width: 768px) {
-  .img-portfolio {
-    height: 120px;
-    width: 120px;
-    margin-bottom: 20px;
-    object-fit: cover;
-  }
-}
-@media (min-width: 1024px) {
-  .img-portfolio {
-    height: 120px;
-    width: 120px;
-    margin-bottom: 20px;
-    object-fit: cover;
-  }
+a:hover {
+  text-decoration: underline;
 }
 
-  .portfolio {
-    height: 589px;
-    padding-top: 30px;
-    padding-left: 40px;
-  }
-
-@media (max-width: 425px) {
-    .portfolio {
-      height: 450px;
-      padding-top: 10px;
-      padding-left: 20px;
-    }
-  }
-@media (min-width: 768px) {
-    .portfolio {
-      height: 500px;
-      padding-top: 10px;
-      padding-left: 10px;
-    }
-  }
-@media (min-width: 1024px) {
-    .portfolio {
-      height: 443px;
-      padding-top: 30px;
-      padding-left: 20px;
-    }
-  }
-
-  /*Aqui começa o h3 Contato*/
-
-  .contato {
-    background-color: #242122;
-    width: 100%;
-  }
+.site-subtitle,
+.site-title  {
+  color: #49d101;
+  text-align: center;
+}
   
-  .contato .icons {
-    text-align: center;
-  }
-  .contato a {
-    color: #49d101;
-    font-size: 30px;
-    padding-left: 30px;
-    transition: text-shadow 1s;
-  }
+.site-title {
+  font-size: 80px;
+  font-family: 'Bellota Text', cursive;
+}
 
-  .contato a:hover {
-    text-decoration: none;
-    text-shadow: 0px 0px 5px currentColor;
+.site-subtitle  {
+  font-family: 'Big Shoulders Display', cursive;
+  line-height: 1.5em;
+}
+
+  /*Aqui começa o h2 Sobre/Serviços*/
+  
+.sobre {
+  background-color: #242122;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio {
+  background-image: linear-gradient(#242122,#45b207,#242122); 
+  background-size: auto 150vh;
+  height: 516px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
   }
+}
+  
+.sobre h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #49d101;
+}
+.portfolio h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 50px;
+  color: #49d101;
+  margin-bottom: 30px;
+}
+
+.sobre p {
+  color: aliceblue;
+  text-align: justify;
+  text-indent: 15px;
+  margin-bottom: 10px;
+}
+
+.sobre .avatar img {
+clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+margin-left: 2em;
+}
+  
+@media (min-width: 600px) {
+  .sobre .avatar {
+    float: left;
+  }
+}
+
+.portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 170px);
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 270px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.img-portfolio {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  object-position: left bottom;
+  transition: transform 500ms;
+}
+
+/*Aqui começa o h3 Contato*/
+
+.contato {
+  background-color: #242122;
+  width: 100%;
+  appearance: ;
+}
+  
+.contato .icons {
+  text-align: center;
+}
+.contato a {
+  color: #49d101;
+  font-size: 40px;
+  padding-left: 40px;
+  transition: text-shadow 1s;
+}
+
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 5px currentColor;
+}
