@@ -112,7 +112,7 @@ a:hover {
 
 @media (min-width: 300px) {
   .sobre {
-    background-size: auto 141vh;
+    background-size: auto 112vh;
     height: 860px;
     padding-left: 10px;
     padding-right: 10px;
@@ -128,7 +128,7 @@ a:hover {
 }
 @media (min-width: 400px) {
   .sobre {
-    background-size: auto 128vh;
+    background-size: auto 147vh;
     height: 780px;
     padding-left: 10px;
     padding-right: 10px;
@@ -144,24 +144,24 @@ a:hover {
 }
 @media (min-width: 500px) {
   .sobre {
-    background-size: auto 107vh;
-    height: 650px;
+    background-size: auto 119vh;
+    height: 630px;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (min-width: 560px) {
   .sobre {
-    background-size: auto 86vh;
-    height: 520px;
+    background-size: auto 96vh;
+    height: 510px;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (min-width: 600px) {
   .sobre {
-    background-size: 65vh;
-    height: 550px;
+    background-size: 55vh;
+    height: 510px;
     padding-top: 10px;
     padding-left: 10px;
   }
@@ -177,7 +177,15 @@ a:hover {
 @media (min-width: 700px) {
   .sobre {
     background-size: 55vh;
-    height: 500px;
+    height: 475px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .sobre {
+    background-size: 55vh;
+    height: 430px;
     padding-top: 10px;
     padding-left: 10px;
   }
@@ -190,10 +198,26 @@ a:hover {
     padding-left: 10px;
   }
 }
+@media (min-width: 1000px) {
+  .sobre {
+    background-size: 45vh;
+    height: 350px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1100px) {
+  .sobre {
+    background-size: 45vh;
+    height: 332px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
 @media (min-width: 1200px) {
   .sobre {
-    background-size: auto 66vh;
-    height: 400px;
+    background-size: auto 65vh;
+    height: 345px;
     padding-top: 10px;
     padding-left: 10px;
   }
@@ -208,48 +232,48 @@ a:hover {
 }
 @media (min-width: 1300px) {
   .sobre {
-    background-size: auto 66vh;
-    height: 420px;
+    background-size: auto 61vh;
+    height: 340px;
     padding-top: 10px;
     padding-left: 10px;
   }
 }
 @media (min-width: 1400px) {
   .sobre {
-    background-size: auto 61vh;
-    height: 420px;
+    background-size: auto 56vh;
+    height: 335px;
     padding-top: 10px;
     padding-left: 10px;
   }
 }
 @media (min-width: 1500px) {
   .sobre {
-    background-size: auto 54vh;
-    height: 400px;
+    background-size: auto 46vh;
+    height: 293px;
     padding-top: 10px;
     padding-left: 10px;
   }
 }
 @media (min-width: 1600px) {
   .sobre {
-    background-size: auto 51vh;
-    height: 400px;
+    background-size: auto 43vh;
+    height: 295px;
     padding-top: 10px;
     padding-left: 10px;
   }
 }
 @media (min-width: 1700px) {
   .sobre {
-    background-size: auto 48vh;
-    height: 400px;
+    background-size: auto 40vh;
+    height: 296px;
     padding-top: 10px;
     padding-left: 10px;
   }
 }
 @media (min-width: 1800px) {
   .sobre {
-    background-size: auto 45vh;
-    height: 400px;
+    background-size: auto 38vh;
+    height: 294px;
     padding-top: 10px;
     padding-left: 10px;
   }
