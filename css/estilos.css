@@ -110,9 +110,25 @@ a:hover {
   padding-left: 40px;
 }
 
+@media (min-width: 300px) {
+  .sobre {
+    background-size: auto 141vh;
+    height: 860px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 300px) {
+  .portfolio {
+    background-size: auto 110vh;
+    height: 670px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 @media (min-width: 400px) {
   .sobre {
-    background-size: auto 115vh;
+    background-size: auto 128vh;
     height: 780px;
     padding-left: 10px;
     padding-right: 10px;
@@ -128,7 +144,7 @@ a:hover {
 }
 @media (min-width: 500px) {
   .sobre {
-    background-size: auto 95vh;
+    background-size: auto 107vh;
     height: 650px;
     padding-left: 10px;
     padding-right: 10px;
@@ -136,7 +152,7 @@ a:hover {
 }
 @media (min-width: 560px) {
   .sobre {
-    background-size: auto 75vh;
+    background-size: auto 86vh;
     height: 520px;
     padding-left: 10px;
     padding-right: 10px;
@@ -176,7 +192,7 @@ a:hover {
 }
 @media (min-width: 1200px) {
   .sobre {
-    background-size: auto 58vh;
+    background-size: auto 66vh;
     height: 400px;
     padding-top: 10px;
     padding-left: 10px;
@@ -192,7 +208,7 @@ a:hover {
 }
 @media (min-width: 1300px) {
   .sobre {
-    background-size: auto 58vh;
+    background-size: auto 66vh;
     height: 420px;
     padding-top: 10px;
     padding-left: 10px;
@@ -200,8 +216,40 @@ a:hover {
 }
 @media (min-width: 1400px) {
   .sobre {
-    background-size: auto 53vh;
+    background-size: auto 61vh;
     height: 420px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1500px) {
+  .sobre {
+    background-size: auto 54vh;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1600px) {
+  .sobre {
+    background-size: auto 51vh;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1700px) {
+  .sobre {
+    background-size: auto 48vh;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1800px) {
+  .sobre {
+    background-size: auto 45vh;
+    height: 400px;
     padding-top: 10px;
     padding-left: 10px;
   }
@@ -232,6 +280,15 @@ a:hover {
   clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
 }
 
+@media (min-width: 300px) {
+  .sobre .avatar img {
+    float: left;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    margin-left: 20px;
+    height: 250px;
+    width: 250px;
+  }
+}
 @media (min-width: 400px) {
   .sobre .avatar img {
     float: left;
@@ -250,7 +307,6 @@ a:hover {
     margin-right: 10px;
   }
 }
-
 @media (min-width: 600px) {
   .sobre .avatar img {
     float: left;
@@ -260,18 +316,40 @@ a:hover {
     margin-right: 10px;
   }
 }
+@media (min-width: 1000px) {
+  .sobre .avatar img {
+    float: left;
+    clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+    height: 240px;
+    width: 240px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1500px) {
+  .sobre .avatar img {
+    float: left;
+    clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+    height: 185px;
+    width: 185px;
+    margin-right: 10px;
+  }
+}
 
 .portfolio .grid {
   display: grid;
   grid-template-columns: repeat(3, 170px);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .portfolio .grid {
-    grid-template-columns: repeat(3, 120px);
+    grid-template-columns: repeat(2, 140px);
   }
 }
-
+@media (min-width: 400px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 125px);
+  }
+}
 @media (min-width: 500px) {
   .portfolio .grid {
     grid-template-columns: repeat(3, 160px);
@@ -294,10 +372,14 @@ a:hover {
     grid-template-columns: repeat(3, 230px);
   }
 }
-
-@media (min-width: 880px) {
+@media (min-width: 800px) {
   .portfolio .grid {
-    grid-template-columns: repeat(3, 270px);
+    grid-template-columns: repeat(3, 260px);
+  }
+}
+@media (min-width: 900px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 290px);
     align-content: center;
     justify-content: center;
   }
@@ -326,6 +408,34 @@ a:hover {
 @media (min-width: 1400px) {
   .portfolio .grid {
     grid-template-columns: repeat(3, 450px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1500px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 500px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1600px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 520px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1700px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 560px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1800px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 600px);
     align-content: center;
     justify-content: center;
   }
@@ -371,4 +481,12 @@ a:hover {
 .contato a:hover {
   text-decoration: none;
   text-shadow: 0px 0px 5px currentColor;
+}
+
+@media (min-width: 300px) {
+  .contato a,
+  .contato a:hover {
+    font-size: 30px;
+    padding-left: 25px;
+  }
 }
