@@ -29,6 +29,7 @@ body {
     font-size: 18px;
   }
 }
+
 header {
   align-items: center;
   background-color: #242122;
@@ -95,26 +96,114 @@ a:hover {
   /*Aqui começa o h2 Sobre/Serviços*/
   
 .sobre {
-  background-color: #242122;
-  height: 650px;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: linear-gradient(#242122,#305718);
+  background-size: auto 82vh; 
+  height: 700px;
+  padding-top: 40px;
+  padding-left: 40px;
 }
 .portfolio {
-  background-image: linear-gradient(#242122,#45b207,#242122); 
-  background-size: auto 150vh;
-  height: 516px;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: linear-gradient(#305718,#45b207);
+  background-size: auto 60vh;
+  height: 450px;
   padding-top: 40px;
   padding-left: 40px;
 }
 
+@media (min-width: 400px) {
+  .sobre {
+    background-size: auto 115vh;
+    height: 780px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 400px) {
+  .portfolio {
+    background-size: auto 80vh;
+    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 500px) {
+  .sobre {
+    background-size: auto 95vh;
+    height: 650px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 560px) {
+  .sobre {
+    background-size: auto 75vh;
+    height: 520px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 600px) {
+  .sobre {
+    background-size: 65vh;
+    height: 550px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 600px) {
+  .portfolio {
+    background-size: 40vh;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 700px) {
+  .sobre {
+    background-size: 55vh;
+    height: 500px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 900px) {
+  .sobre {
+    background-size: 45vh;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
 @media (min-width: 1200px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
+  .sobre {
+    background-size: auto 58vh;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1200px) {
+ .portfolio {
+    background-size: auto 400px;
+    height: 400px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1300px) {
+  .sobre {
+    background-size: auto 58vh;
+    height: 420px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  .sobre {
+    background-size: auto 53vh;
+    height: 420px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
 }
   
@@ -132,20 +221,43 @@ a:hover {
 }
 
 .sobre p {
-  color: aliceblue;
+  color: black;
   text-align: justify;
   text-indent: 15px;
   margin-bottom: 10px;
 }
 
 .sobre .avatar img {
-clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
-margin-left: 2em;
+  float: left;
+  clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
 }
-  
-@media (min-width: 600px) {
-  .sobre .avatar {
+
+@media (min-width: 400px) {
+  .sobre .avatar img {
     float: left;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    margin-left: 20px;
+    height: 340px;
+    width: 340px;
+  }
+}
+@media (min-width: 560px) {
+  .sobre .avatar img {
+    float: left;
+    clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .sobre .avatar img {
+    float: left;
+    clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
   }
 }
 
@@ -154,15 +266,66 @@ margin-left: 2em;
   grid-template-columns: repeat(3, 170px);
 }
 
+@media (min-width: 400px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 120px);
+  }
+}
+
+@media (min-width: 500px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 160px);
+  }
+}
+
 @media (min-width: 560px) {
   .portfolio .grid {
-    grid-template-columns: repeat(3, 170px);
+    grid-template-columns: repeat(3, 180px);
+  }
+}
+
+@media (min-width: 600px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 190px);
+  }
+}
+@media (min-width: 700px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 230px);
   }
 }
 
 @media (min-width: 880px) {
   .portfolio .grid {
     grid-template-columns: repeat(3, 270px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1100px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 380px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 370px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1300px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 430px);
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1400px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 450px);
     align-content: center;
     justify-content: center;
   }
@@ -181,12 +344,18 @@ margin-left: 2em;
   transition: transform 500ms;
 }
 
+@media (min-width: 400px) {
+  .img-portfolio {
+    height: 90px;
+    width: 90px;
+  }
+}
+ 
 /*Aqui começa o h3 Contato*/
 
 .contato {
   background-color: #242122;
   width: 100%;
-  appearance: ;
 }
   
 .contato .icons {
