@@ -119,7 +119,7 @@ a:hover {
 @media (min-width: 300px) {
   .portfolio {
     background-size: auto 126vh;
-    height: 670px;
+    height: 675px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -146,6 +146,13 @@ a:hover {
     padding-right: 10px;
   }
 }
+@media (min-width: 500px) {
+  .portfolio {
+    height: 370px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 @media (min-width: 560px) {
   .sobre {
     height: 510px;
@@ -163,7 +170,7 @@ a:hover {
 @media (min-width: 600px) {
   .portfolio {
     background-size: 40vh;
-    height: 400px;
+    height: 350px;
     padding-top: 10px;
     padding-left: 10px;
   }
@@ -175,9 +182,25 @@ a:hover {
     padding-left: 10px;
   }
 }
+@media (min-width: 700px) {
+  .portfolio {
+    background-size: 40vh;
+    height: 340px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
 @media (min-width: 800px) {
   .sobre {
     height: 430px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .portfolio {
+    background-size: 40vh;
+    height: 330px;
     padding-top: 10px;
     padding-left: 10px;
   }
@@ -203,6 +226,14 @@ a:hover {
     padding-left: 10px;
   }
 }
+@media (min-width: 1100px) {
+  .portfolio {
+    background-size: 40vh;
+    height: 320px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
 @media (min-width: 1200px) {
   .sobre {
     height: 345px;
@@ -213,7 +244,7 @@ a:hover {
 @media (min-width: 1200px) {
  .portfolio {
     background-size: auto 400px;
-    height: 400px;
+    height: 320px;
     padding-top: 10px;
     padding-left: 10px;
   }
@@ -361,13 +392,11 @@ a:hover {
     grid-template-columns: repeat(3, 160px);
   }
 }
-
 @media (min-width: 560px) {
   .portfolio .grid {
     grid-template-columns: repeat(3, 180px);
   }
 }
-
 @media (min-width: 600px) {
   .portfolio .grid {
     grid-template-columns: repeat(3, 190px);
@@ -493,6 +522,6 @@ a:hover {
   .contato a,
   .contato a:hover {
     font-size: 30px;
-    padding-left: 25px;
+    padding-left: 16px;
   }
 }
