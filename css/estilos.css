@@ -138,6 +138,7 @@ a:hover {
   object-fit: cover;
   object-position: left bottom;
   transition: transform 500ms;
+  text-align: center;
 }
 
 .texto-portfolio {
