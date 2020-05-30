@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eder Sato</title>
+  <link rel="stylesheet" href="../Alura/Formação html-css/HTML-CSS/reset.css">
   <link rel="stylesheet" href="css/estilos.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&family=Big+Shoulders+Display:wght@400;600&family=IBM+Plex+Serif&display=swap"
@@ -16,8 +17,8 @@
   <header>
     <nav class="menu">
       <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#portfolio">Serviços</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -28,69 +29,75 @@
         <h2 class="site-subtitle">Front-end</h2>
       </div>
   </header>
-  <section class="sobre" id="sobre">
-    <h2>Sobre</h2>
+  <main>
+    <section class="sobre" id="sobre">
+      <h2>Sobre</h2>
 
-    <figure class="avatar">
-      <img src="https://pbs.twimg.com/profile_images/1261756506342592512/uxrsfCTa_400x400.jpg" alt="Eder Sato">
-      <p>
-        Olá, seja bem vindo! Meu nome é Eder Sato, tenho 25 anos, nascido e criado em Curitiba no Paraná. Sou web
-        designer a 2 anos e estou migrando para a área de programação, mais especificadamente o Front-End.
-      </p>
+      <figure class="avatar">
+        <img src="https://pbs.twimg.com/profile_images/1261756506342592512/uxrsfCTa_400x400.jpg" alt="Eder Sato">
+        <p>
+          Olá, seja bem vindo! Meu nome é Eder Sato, tenho 25 anos, nascido e criado em Curitiba no Paraná. Sou web
+          designer a 2 anos e estou migrando para a área de programação, mais especificadamente o Front-End.
+        </p>
 
-      <p>
-        Estou cursando Design Gráfico atualmente, para ampliar meu currículo. Até que descobri a programação em HTML,
-        CSS e JavaScript.
-      </p>
+        <p>
+          Estou cursando Design Gráfico atualmente, para ampliar meu currículo. Até que descobri a programação em HTML,
+          CSS e JavaScript.
+        </p>
 
-      <p>
-        Abaixo você pode conferir o que eu posso fazer por você, sua empresa ou até mesmo, auxiliar em algum projeto,
-        pois estou mergulhando de cabeça na área. Todos os meus contatos pessoais e profissionais você encontra no fim
-        dessa página.
-      </p>
+        <p>
+          Abaixo você pode conferir o que eu posso fazer por você, sua empresa ou até mesmo, auxiliar em algum projeto,
+          pois estou mergulhando de cabeça na área. Todos os meus contatos pessoais e profissionais você encontra no fim
+          dessa página.
+        </p>
 
-      <p>
-        Esse site foi construído durante a <a href="https://www.alura.com.br/imersao-css">#imersãoCSS da Alura</a>
-      </p>
-    </figure>
-  </section>
-  <section class="portfolio" id="portfolio">
-    <h2>Serviços</h2>
-    <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="./img/idvisual.png" alt=">Identidade Visual">
-        <figcaption>Produção e criação da identidade visual do seu produto, sua marca, sua ideia</figcaption>
+        <p>
+          Esse site foi construído durante a <a href="https://www.alura.com.br/imersao-css">#imersãoCSS da Alura</a>
+        </p>
       </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/edaudio.png" alt="Edição Audiovisual">
-        <figcaption>Produção e edição do seu podcast, vídeo institucional ou video para YouTube</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/frontend.png" alt="Front-end">
-        <figcaption>A habilidade de front-end ainda não foi desbloqueada, preciso upar mais levels :)</figcaption>
-      </figure>
-    </div>
-  </section>
-  <section class="contato" id="contato">
-    <h3></h3>
-    <div class="grid icons">
-      <a target="_blank" href="https://instagram.com/sato.r.eder">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a target="_blank" href="https://twitter.com/sato_eder">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a target="_blank" href="https://linkedin.com/in/eder-da-rosa-sato">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://github.com/edersato">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="mailto:edersato@gmail.com">
-        <i class="far fa-envelope"></i>
-      </a>
-    </div>
-  </section>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <h2>Serviços</h2>
+      <div class="grid">
+        <figure>
+          <img class="img-portfolio" src="./img/idvisual.png" alt=">Identidade Visual">
+          <figcaption class="texto-portfolio">Produção e criação da identidade visual do seu produto, sua marca, sua
+            ideia</figcaption>
+        </figure>
+        <figure>
+          <img class="img-portfolio" src="./img/edaudio.png" alt="Edição Audiovisual">
+          <figcaption class="texto-portfolio">Produção e edição do seu podcast, vídeo institucional ou video para
+            YouTube</figcaption>
+        </figure>
+        <figure>
+          <img class="img-portfolio" src="./img/frontend.png" alt="Front-end">
+          <figcaption class="texto-portfolio">A habilidade de front-end ainda não foi desbloqueada, preciso upar mais
+            levels :)</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="contato" id="contato">
+      <h3></h3>
+      <div class="grid icons">
+        <a target="_blank" href="https://instagram.com/sato.r.eder">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/sato_eder">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/eder-da-rosa-sato-2749481a5/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/edersato">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:edersato@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+  </footer>
 </body>
-
 </html>
