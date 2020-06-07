@@ -20,14 +20,22 @@ body {
   }
 }
 
+/* cores novas pro site
+
+Header - #85c1e9
+BG - #FBFCFC
+Gradient (se quiser) - #DEDEDE
+*/
+
 header {
-  background-color: #242122;
-  padding: 60px 0;
+  background-color: #85c1e9;
+  padding: 50px 0px 0px 0px;
+  height: 165px;
 }
 
 .menu {
-  background-color: #242122;
-  position: fixed;
+  background-color: #85c1e9;
+  position: absolute;
   top: 0%;
   width: 100vw;
 }
@@ -42,7 +50,7 @@ list-style: none;
 }
 
 .menu a {
-  background-color: #242122;
+  background-color: #85c1e9;
   border-radius: 25px;
   display: block;
   font-size: 18px;
@@ -51,12 +59,12 @@ list-style: none;
 }
 
 .menu a:hover {
-  background-color: #45b207;
-  color: #242122;
+  background-color: #242122;
+  color: #85c1e9;
 }  
 
 a {
-  color: #45b207;
+  color: #242122;
   text-decoration: none;
 }
 
@@ -66,34 +74,35 @@ a:hover {
 
 .site-subtitle,
 .site-title  {
-  color: #49d101;
-  text-align: center;
+  color: #242122;
 }
   
 .site-title {
-  font-size: 80px;
+  font-size: 60px;
   font-family: 'Bellota Text', cursive;
+  margin: 1px 1px 1px 45px;
 }
 
 .site-subtitle  {
   font-family: 'Big Shoulders Display', cursive;
   font-size: 2em;
   line-height: 1.5em;
+  margin: 1px 1px 1px 50px;
 }
 
   /*Aqui começa o h2 Sobre/Serviços*/
   
 .sobre {
-  background-color: #305718;
+  background-color: #dedede;
   height: auto;
-  padding: 5px 15px;
+  padding: 30px 40px;
 }
 
 .portfolio {
-  background-image: linear-gradient(#305718,#45b207);
+  background-image: linear-gradient(#dedede, #fbfcfc);
   background-size: auto;
   height: auto;
-  padding: 5px 15px;
+  padding: 30px 40px;
 }
 
 .sobre h2 {
@@ -101,64 +110,71 @@ a:hover {
   font-family: 'Big Shoulders Display', cursive;
   font-size: 50px;
   margin-bottom: 20px;
-  color: #49d101;
+  color: #242122;
 }
 .portfolio h2 {
   clear: left;
   font-family: 'Big Shoulders Display', cursive;
   font-size: 50px;
-  color: #49d101;
+  color: #242122;
   margin-bottom: 20px;
 }
 
 .sobre p {
-  color: black;
-  margin-bottom: 10px;
-  text-align: justify;
-  text-indent: 15px;
+  color: #242122;
+  margin: 0px 0px 10px 0px;
+  text-align: left;
 }
 
 .sobre .avatar img {
   clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
   float: left;
-  margin: 0 5px 5px -48px;
+  margin: 0 10px 5px -50px;
   height: 200px;
   width: 200px;
 }
 
+.sobre p .link-alura {
+  color: #51ace9;
+}
+
 .portfolio .grid {
   display: grid;
-  grid-template-columns: repeat(3, 33.3%);
+  grid-template-columns: repeat(3, 34.3%);
 }
 
 .img-portfolio {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   margin-bottom: 20px;
   object-fit: cover;
-  object-position: left bottom;
-  transition: transform 500ms;
-  text-align: center;
 }
 
 .texto-portfolio {
-  margin: 0 15px 20px 15px;
+  padding: 10px 32px 10px 0px;
 }
 
 /*Aqui começa o h3 Contato*/
 
+h3 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
 .contato {
-  background-color: #242122;
-  height: 39px;
+  background-color: #85c1e9;
+  height: auto;
 }
   
 .contato .icons {
   text-align: center;
 }
 .contato a {
-  color: #49d101;
+  color: #242122;
   font-size: 30px;
-  margin-left: 20px;
+  margin-left: 15px;
   transition: text-shadow 1s;
 }
 
