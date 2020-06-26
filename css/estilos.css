@@ -37,7 +37,7 @@ header {
   background-color: #85c1e9;
   position: absolute;
   top: 0%;
-  width: 100vw;
+  width: 98vw;
 }
 
 .menu ul {
@@ -51,10 +51,10 @@ list-style: none;
 
 .menu a {
   background-color: #85c1e9;
-  border-radius: 25px;
+  border-radius: 50px;
   display: block;
-  font-size: 18px;
-  padding: 5px 20px;  
+  font-size: 15px;
+  padding: 12px;  
   transition: background-color 1s, color 0.8s;
 }
 
@@ -120,17 +120,10 @@ a:hover {
   color: #85c1e9;
 }
 
-  /*Aqui começa o h2 Sobre/Serviços*/
+ /*Aqui começa o h2 Sobre*/
   
 .sobre {
   background-color: #dedede;
-  height: auto;
-  padding: 30px 40px;
-}
-
-.servicos {
-  background-image: linear-gradient(#dedede, #fbfcfc);
-  background-size: auto;
   height: auto;
   padding: 30px 40px;
 }
@@ -141,14 +134,6 @@ a:hover {
   font-size: 50px;
   margin-bottom: 20px;
   color: #242122;
-}
-.servicos h2,
-.conhecimentos h2 {
-  clear: left;
-  font-family: 'Big Shoulders Display', cursive;
-  font-size: 50px;
-  color: #242122;
-  margin-bottom: 20px;
 }
 
 .sobre p {
@@ -168,6 +153,8 @@ a:hover {
 .sobre p .link-alura {
   color: #51ace9;
 }
+
+ /* Aqui começa o h2 - Conhecimentos */
 
 .container li {
   position: relative;
@@ -198,7 +185,7 @@ a:hover {
   height: 15px;
   background-color: rgba(81, 172, 233, 1);
   border-radius: 1000px;
-  animation-duration: 2.5s;
+  animation-duration: 4.0s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -263,6 +250,25 @@ a:hover {
   }
 }
 
+ /* Aqui começa o h2 Serviços/Conhecimentos */
+
+ .servicos {
+  background-image: linear-gradient(#dedede, #fbfcfc);
+  background-size: auto;
+  height: auto;
+  padding: 30px 40px;
+}
+
+.servicos h2,
+.conhecimentos h2 {
+  clear: left;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 50px;
+  color: #242122;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .servicos .grid {
   display: grid;
   grid-template-columns: repeat(3, 34.3%);
@@ -279,9 +285,9 @@ a:hover {
   padding: 10px 32px 10px 0px;
 }
 
-/*Aqui começa o h3 Contato*/
+/*Aqui começa o h4 Contato*/
 
-h3 {
+h4 {
   font-family: 'Big Shoulders Display', cursive;
   font-size: 30px;
   text-align: center;
@@ -307,3 +313,5 @@ h3 {
   text-decoration: none;
   text-shadow: 0px 0px 5px currentColor;
 }
+
+/* Pagina de Projetos */
