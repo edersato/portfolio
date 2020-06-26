@@ -1,0 +1,45 @@
+.projetos {
+    background-image: linear-gradient(#dedede, #fbfcfc);
+    background-size: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
+.projetos h3 {
+    color: #242122;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.projetos p {
+  padding-right: 20px;
+}
+
+.texto-jogos {
+  padding-bottom: 20px;
+}
+
+.link-jogo {
+  font-weight: bold;
+  color: #45b1e9;
+}
+
+.pong {
+  height: 50%;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.freeway {
+  height: 50%;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.hipsta {
+  height: 50%;
+  width: 50%;
+  margin-bottom: 30px;
+}
