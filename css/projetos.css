@@ -26,20 +26,11 @@
   color: #45b1e9;
 }
 
-.pong {
-  height: 50%;
-  width: 50%;
-  margin-bottom: 30px;
-}
-
-.freeway {
-  height: 50%;
-  width: 50%;
-  margin-bottom: 30px;
-}
-
+.pong,
+.freeway,
 .hipsta {
-  height: 50%;
-  width: 50%;
-  margin-bottom: 30px;
+  height: 80%;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  width: 80%;  
 }
