@@ -15,102 +15,147 @@
 
 <body>
   <header>
+    <div class="header">
+      <h1 class="site-title">Eder Sato</h1>
+      <h2 class="site-subtitle">Web designer</h2>
+      <h2 class="site-subtitle">Jr. Front-end</h2>
+    </div>
     <nav class="menu">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#conhecimentos">Conhecimentos</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <div>
-      <div class="header">
-        <h1 class="site-title">Eder Sato</h1>
-        <h2 class="site-subtitle">Web designer</h2>
-        <h2 class="site-subtitle">Jr. Front-end</h2>
-        <button class="botaoServico">
-          <a href="#servicos">Serviços</a>
-        </button>
-      </div>
+
 
   </header>
   <main>
     <section class="sobre" id="sobre">
       <h2>Sobre</h2>
-
       <figure class="avatar">
         <img src="https://pbs.twimg.com/profile_images/1261756506342592512/uxrsfCTa_400x400.jpg" alt="Eder Sato">
         <p>
-          Olá, seja bem vindo! Meu nome é Eder Sato, tenho 25 anos, nascido e criado em Curitiba/Paraná. Sou web
-          designer a 2 anos e estou migrando para a área de programação, mais especificadamente o Front-End.
-        </p>
-
-        <p>
-          Estou cursando Design Gráfico atualmente, para ampliar meu currículo. Até que descobri a programação em HTML,
-          CSS e JavaScript.
-        </p>
-
-        <p>
-          Na seção de serviços, você pode conferir o que eu posso fazer por você, sua empresa ou até mesmo, auxiliar em
-          algum projeto, Além disso, todos os projetos que já concluí ou que estão sendo desenvolvidos estarão na aba <a
-            class="link-alura" href="projetos.html">Projetos</a> para que possa visualizar e interagir.
-        </p>
-
-        <p>
-          Todos os meus contatos pessoais e profissionais você encontra no fim dessa página. <br><br>
+          Meu nome é Eder Sato, tenho 25 anos, sou webdesigner e estou migrando para a programação Front/Back End.
+          Atualmente, sou estudante de Design Gráfico.
+          <br><br>
+          Nos ultimos meses, desenvolvi algumas aplicações e venho aprimorando meus conhecimentos, dentre elas se
+          destacando
+          as linguagens
+          <br><br>
+          HTML, CSS, Sass, Javascript, Node, Vue.Js, React.
+          <br><br>
+          Estou pronto para novos projetos e adquirir mais conhecimento na área de desenvolvimento.
+          <br><br>
           Esse site foi construído durante a <a class="link-alura"
             href="https://www.alura.com.br/imersao-css">#imersãoCSS da Alura</a>
         </p>
       </figure>
-
-      <section class="conhecimentos">
-        <h2>Conhecimentos</h2>
-        <div class="container">
-          <ul>
-            <li class="adobeUm">Photoshop/Illustrator</li>
-            <li class="adobeDois">InDesign</li>
-            <li class="adobeTres">Premiere/After Effects</li>
-            <li class="html">HTML</li>
-            <li class="css">CSS</li>
-            <li class="java">Java</li>
-          </ul>
-        </div>
-      </section>
     </section>
-    <section class="servicos" id="servicos">
-      <h2>Serviços</h2>
-      <div class="grid">
+
+    <section class="projetos" id="projetos">
+      <h2>Projetos</h2>
+      <div class="jogos">
         <figure>
-          <img class="img-servicos" src="./img/idvisual.png" alt=">Identidade Visual">
-          <figcaption class="texto-servicos">Produção e criação da identidade visual do seu produto, sua marca, sua
-            ideia</figcaption>
+          <a href="https://editor.p5js.org/Eder_Sato/present/AZRXmB2sM">
+            <img class="imagem" src="../Imersão CSS/img/pong2.png" alt="Pong">
+          </a>
         </figure>
         <figure>
-          <img class="img-servicos" src="./img/edaudio.png" alt="Edição Audiovisual">
-          <figcaption class="texto-servicos">Produção e edição do seu podcast, vídeo institucional ou video para
-            YouTube</figcaption>
+          <a href="https://editor.p5js.org/Eder_Sato/present/knjAEPCz0">
+            <img class="imagem" src="../Imersão CSS/img/freeway2.png" alt="Freeway">
+          </a>
         </figure>
         <figure>
-          <img class="img-servicos" src="./img/frontend.png" alt="Front-end">
-          <figcaption class="texto-servicos">A habilidade de front-end ainda não foi desbloqueada, preciso upar mais
-            levels :)</figcaption>
+          <a href="https://editor.p5js.org/Eder_Sato/present/SYVpVFLIz">
+            <img class="imagem" src="../Imersão CSS/img/hipsta2.png" alt="Hipsta">
+          </a>
         </figure>
       </div>
     </section>
-  </main>
-  <footer>
+
+    <section class="conhecimentos" id="conhecimentos">
+      <h2>Conhecimentos</h2>
+      <div class="logos">
+        <a target="_blank" href="">
+          <i class="fas fa-code"></i>
+        </a>
+        <a target="_blank" href="">
+          <i class="fas fa-pencil-ruler"></i>
+        </a>
+        <a target="_blank" href="">
+          <i class="fas fa-language"></i>
+        </a>
+      </div>
+      <div class="container">
+        <ul>
+          <li class="html">HTML</li>
+          <li class="css">CSS</li>
+          <li class="javascript">Javascript</li>
+          <li class="node">Node</li>
+        </ul>
+        <ul>
+          <li class="photoshop">Photoshop</li>
+          <li class="illustrator">Illustrator</li>
+          <li class="indesign">InDesign</li>
+          <li class="corel">CorelDraw</li>
+        </ul>
+        <ul>
+          <li class="port">Português</li>
+          <li class="eng">Inglês</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="contato" id="contato">
-      <h4>Entre em contato</h4>
+      <h2>Contato</h2>
+      <p class="gravata">Entre em contato pelo:</p>
+      <div class="box">
+        <div class="tel">
+          <a target="_blank" href="">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a target="_blank" href="">
+            <i class="fab fa-telegram"></i>
+          </a>
+          <p>(41) 9 9978-3988</p>
+        </div>
+        <div class="mail">
+         <a target="_blank" href="">
+          <i class="far fa-envelope"></i>
+        </a>
+        <p>edersato@gmail.com</p> 
+        </div>
+        <div class="map">
+          <a target="_blank" href="">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+          <p>Curitiba - PR</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer">
+      <h4>Redes Sociais</h4>
       <div class="grid icons">
-        <a target="_blank" href="https://www.linkedin.com/in/eder-da-rosa-sato-2749481a5/">
+        <a href="https://www.linkedin.com/in/eder-da-rosa-sato-2749481a5/">
           <i class="fab fa-linkedin-in"></i>
         </a>
         <a href="https://github.com/edersato">
           <i class="fab fa-github"></i>
         </a>
-        <a target="_blank" href="https://twitter.com/sato_eder">
+        <a href="https://twitter.com/sato_eder">
           <i class="fab fa-twitter"></i>
         </a>
+        <a href="https://www.instagram.com/sato.r.eder/">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+
       </div>
     </section>
   </footer>
