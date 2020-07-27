@@ -1,317 +1,299 @@
+@charset "UTF-8";
 body {
-  font-family: 'IBM Plex Serif', serif;
-}
+  font-family: 'IBM Plex Serif', serif; }
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px; } }
 
-@media (min-width: 400px) {
-  body {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-/* cores novas pro site
-
-Header - #85c1e9
-BG - #FBFCFC
-Gradient (se quiser) - #DEDEDE
-*/
-
+/* Aqui termina as configurações gerais */
+/* Aqui começa o header */
 header {
   background-color: #85c1e9;
-  padding: 50px 0px 0px 0px;
-  height: auto;
-}
+  display: flex;
+  justify-content: space-between; }
 
 .menu {
   background-color: #85c1e9;
-  position: absolute;
-  top: 0%;
-  width: 98vw;
-}
+  margin-top: 1%;
+  margin-right: 5%; }
+  @media (max-width: 768px) {
+    .menu {
+      margin-top: 1%;
+      margin-bottom: 1%; } }
+  .menu ul {
+    display: flex; }
+    @media (max-width: 768px) {
+      .menu ul {
+        flex-direction: column;
+        text-align: right; } }
+  .menu li {
+    list-style: none; }
+    @media (max-width: 768px) {
+      .menu li {
+        padding: 9px 0; } }
+  .menu a {
+    color: #242122;
+    font-size: 16px;
+    padding: 9px;
+    transition: background-color 1.5s, color 0.8s;
+    text-decoration: none; }
+    .menu a:hover {
+      background-color: #242122;
+      color: #85c1e9; }
 
-.menu ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.menu li {
-list-style: none;
-}
-
-.menu a {
-  background-color: #85c1e9;
-  border-radius: 50px;
-  display: block;
-  font-size: 15px;
-  padding: 12px;  
-  transition: background-color 1s, color 0.8s;
-}
-
-.menu a:hover {
-  background-color: #242122;
-  color: #85c1e9;
-}  
-
-a {
-  color: #242122;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.site-subtitle,
-.site-title  {
-  color: #242122;
-}
-  
 .site-title {
-  font-size: 60px;
+  color: #242122;
   font-family: 'Bellota Text', cursive;
-  margin: 1px 1px 1px 45px;
-}
+  font-size: 50px;
+  margin-top: 2%;
+  margin-left: 30px; }
+  @media (max-width: 768px) {
+    .site-title {
+      margin-top: 5%;
+      font-size: 40px; } }
 
-.site-subtitle  {
+.site-subtitle {
+  color: #242122;
   font-family: 'Big Shoulders Display', cursive;
   font-size: 2em;
   line-height: 1.5em;
-  margin: 1px 1px 1px 50px;
-}
+  margin-left: 30px; }
+  @media (max-width: 768px) {
+    .site-subtitle {
+      font-size: 1.5em; } }
 
-.botaoServico {
-  background-color: transparent;
-  border: 1px solid #242122;
-  line-height: 2;
-  cursor: pointer;
-  display: block;
-  text-decoration: none;
-  margin: 0 auto;
-  transition: .2s ease-in;
-  position: absolute;
-  right: 50px;
-  top: 160px;
-}
-
-.botaoServico:hover,
-.botaoServico:focus {
-  background: #242122;
-  color: #85c1e9;
-}
-
-.botaoServico a {
-  font-size: 15px;
-}
-
-.botaoServico a:hover,
-.botaoServico a:focus {
-  background: #242122;
-  color: #85c1e9;
-}
-
- /*Aqui começa o h2 Sobre*/
-  
+/* Aqui acaba o header*/
+/* Aqui começa a seção Sobre */
 .sobre {
-  background-color: #dedede;
-  height: auto;
-  padding: 30px 40px;
-}
+  background-color: #dedede; }
+  .sobre h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 50px;
+    margin-left: 30px;
+    padding: 10px 0;
+    color: #242122; }
+  .sobre p {
+    color: #242122;
+    margin: 0 5%;
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: left; }
+    .sobre p .link-alura {
+      color: #125d8f; }
+  .sobre .avatar img {
+    clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0 10px 5px -13px; }
 
-.sobre h2 {
-  clear: left;
+/* Aqui acaba a seção Sobre */
+/* Aqui começa a sessão Projetos */
+.projetos {
+  background-color: #dedede; }
+  .projetos h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 50px;
+    color: #242122;
+    margin-left: 30px;
+    padding: 10px 0; }
+
+.jogos {
+  display: flex;
+  justify-content: space-evenly; }
+  @media (max-width: 800px) {
+    .jogos {
+      flex-wrap: wrap;
+      justify-content: space-around; } }
+
+.imagem {
+  width: 250px;
+  height: 180px; }
+  @media (max-width: 1024px) {
+    .imagem {
+      margin-bottom: 20px;
+      width: 210px;
+      height: 150px; } }
+
+/* Aqui acaba a seção Projetos */
+/* Aqui começa a Seção Conhecimentos */
+.conhecimentos {
+  background-color: #dedede; }
+
+.conhecimentos h2 {
   font-family: 'Big Shoulders Display', cursive;
   font-size: 50px;
-  margin-bottom: 20px;
   color: #242122;
-}
+  margin-left: 30px;
+  padding: 10px 0; }
 
-.sobre p {
-  color: #242122;
-  margin: 0px 0px 10px 0px;
-  text-align: left;
-}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px; }
+  .logos a {
+    color: #242122;
+    font-size: 50px;
+    text-decoration: none; }
 
-.sobre .avatar img {
-  clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
-  float: left;
-  margin: 0 10px 5px -50px;
-  height: 200px;
-  width: 200px;
-}
-
-.sobre p .link-alura {
-  color: #51ace9;
-}
-
- /* Aqui começa o h2 - Conhecimentos */
-
-.container li {
-  position: relative;
-  list-style: none;
-  margin: 35px 0;
-  font-family: 'Big Shoulders Display', cursive;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.container li::before {
-  content: "";
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  width: 100%;
-  height: 15px;
-  background-color: rgba(36, 33, 34, .5);
-  border-radius: 1000px;
-}
-
-.container li::after {
-  content: "";
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  width: 0;
-  height: 15px;
-  background-color: rgba(81, 172, 233, 1);
-  border-radius: 1000px;
-  animation-duration: 4.0s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-.container li.adobeUm:after {
-  animation-name: adobeUm;
-}
-
-@keyframes adobeUm {
-  to {
-    width: 85%;
-  }
-}
-
-.container li.adobeDois:after {
-  animation-name: adobeDois;
-}
-
-@keyframes adobeDois {
-  to {
-    width: 74%;
-  }
-}
-
-.container li.adobeTres:after {
-  animation-name: adobeTres;
-}
-
-@keyframes adobeTres {
-  to {
-    width: 63%;
-  }
-}
-
-.container li.html:after {
-  animation-name: html;
-}
-
+.container {
+  display: flex; }
+  .container ul {
+    width: 35%; }
+    .container ul li {
+      position: relative;
+      list-style: none;
+      margin: 0 30px 30px 30px;
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: bold; }
+      .container ul li::before {
+        content: "";
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 100%;
+        height: 15px;
+        background-color: rgba(36, 33, 34, 0.5);
+        border-radius: 1000px; }
+      .container ul li::after {
+        content: "";
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        width: 0;
+        height: 15px;
+        background-color: #51ace9;
+        border-radius: 1000px;
+        animation-duration: 5.0s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards; }
+    .container ul .html:after {
+      animation-name: html; }
 @keyframes html {
   to {
-    width: 52%;
-  }
-}
-
-.container li.css:after {
-  animation-name: css;
-}
-
+    width: 55%; } }
+    .container ul .css:after {
+      animation-name: css; }
 @keyframes css {
   to {
-    width: 51%;
-  }
-}
-
-.container li.java:after {
-  animation-name: java;
-}
-
+    width: 53%; } }
+    .container ul .javascript:after {
+      animation-name: java; }
 @keyframes java {
   to {
-    width: 30%;
-  }
-}
+    width: 46%; } }
+    .container ul .node:after {
+      animation-name: node; }
+@keyframes node {
+  to {
+    width: 25%; } }
+    .container ul .photoshop:after {
+      animation-name: photoshop; }
+@keyframes photoshop {
+  to {
+    width: 70%; } }
+    .container ul .illustrator:after {
+      animation-name: illustrator; }
+@keyframes illustrator {
+  to {
+    width: 60%; } }
+    .container ul .indesign:after {
+      animation-name: indesign; }
+@keyframes indesign {
+  to {
+    width: 60%; } }
+    .container ul .corel:after {
+      animation-name: corel; }
+@keyframes corel {
+  to {
+    width: 55%; } }
+    .container ul .port:after {
+      animation-name: port; }
+@keyframes port {
+  to {
+    width: 100%; } }
+    .container ul .eng:after {
+      animation-name: eng; }
+@keyframes eng {
+  to {
+    width: 60%; } }
+/* Aqui acaba a seção Conhecimentos */
+/*Aqui começa a seção Contato*/
+.contato {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column; }
+  .contato h2 {
+    font-family: 'Big Shoulders Display',cursive;
+    font-size: 50px;
+    color: #242122;
+    text-align: center;
+    padding: 10px 0; }
+  .contato a {
+    color: #242122;
+    font-size: 35px;
+    text-decoration: none; }
+  .contato .gravata {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px; }
 
- /* Aqui começa o h2 Serviços/Conhecimentos */
-
- .servicos {
-  background-image: linear-gradient(#dedede, #fbfcfc);
-  background-size: auto;
-  height: auto;
-  padding: 30px 40px;
-}
-
-.servicos h2,
-.conhecimentos h2 {
-  clear: left;
-  font-family: 'Big Shoulders Display', cursive;
-  font-size: 50px;
-  color: #242122;
-  margin-top: 10px;
+.box {
+  border: thick double #85c1e9;
+  margin: 0 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-bottom: 20px;
-}
+  line-height: 1.5em; }
+  .box .tel {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 1.5; }
+    .box .tel p {
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 1em;
+      font-weight: bold; }
+  .box .mail {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 1.5; }
+    .box .mail p {
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 1em;
+      font-weight: bold; }
+  .box .map {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 1.5; }
+    .box .map p {
+      font-family: 'Big Shoulders Display', cursive;
+      font-size: 1em;
+      font-weight: bold; }
 
-.servicos .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 34.3%);
-}
-
-.img-servicos {
-  height: 60px;
-  width: 60px;
-  margin-bottom: 20px;
-  object-fit: cover;
-}
-
-.texto-servicos {
-  padding: 10px 32px 10px 0px;
-}
-
-/*Aqui começa o h4 Contato*/
-
+/*Aqui termina a seção Contato*/
+/* Aqui começa a seção footer */
 h4 {
   font-family: 'Big Shoulders Display', cursive;
   font-size: 30px;
   text-align: center;
   margin-bottom: 10px;
-}
+  padding: 5px 0; }
 
-.contato {
+.footer {
   background-color: #85c1e9;
-  height: 86px;
-}
-  
-.contato .icons {
-  text-align: center;
-}
-.contato a {
-  color: #242122;
-  font-size: 30px;
-  margin-left: 10px;
-  transition: text-shadow 1s;
-}
+  height: 90px;
+  display: flex;
+  flex-direction: column; }
+  .footer a {
+    color: #242122;
+    font-size: 30px;
+    margin-left: 10px;
+    transition: text-shadow 1s;
+    text-decoration: none; }
+    .footer a:hover {
+      text-shadow: 0px 0px 5px currentColor; }
+  .footer .icons {
+    text-align: center; }
 
-.contato a:hover {
-  text-decoration: none;
-  text-shadow: 0px 0px 5px currentColor;
-}
-
-/* Pagina de Projetos */
+/*Aqui acaba a seção footer*/
