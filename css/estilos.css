@@ -78,8 +78,10 @@ header {
     padding: 10px 0;
     font-size: 16px;
     text-align: left; }
+    .sobre p .tecnologias {
+      font-weight: bold; }
     .sobre p .link-alura {
-      color: #125d8f; }
+      color: #156ca6; }
   .sobre .avatar img {
     clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
     width: 200px;
@@ -171,22 +173,27 @@ header {
       animation-name: html; }
 @keyframes html {
   to {
-    width: 55%; } }
+    width: 64%; } }
     .container ul .css:after {
       animation-name: css; }
 @keyframes css {
   to {
-    width: 53%; } }
+    width: 59%; } }
     .container ul .javascript:after {
       animation-name: java; }
 @keyframes java {
   to {
-    width: 46%; } }
-    .container ul .node:after {
-      animation-name: node; }
-@keyframes node {
+    width: 55%; } }
+    .container ul .react:after {
+      animation-name: react; }
+@keyframes react {
   to {
-    width: 25%; } }
+    width: 34%; } }
+    .container ul .vue:after {
+      animation-name: vue; }
+@keyframes vue {
+  to {
+    width: 30%; } }
     .container ul .photoshop:after {
       animation-name: photoshop; }
 @keyframes photoshop {
@@ -297,3 +304,5 @@ h4 {
     text-align: center; }
 
 /*Aqui acaba a seção footer*/
+
+/*# sourceMappingURL=estilos.css.map */
