@@ -63,16 +63,31 @@ header {
       font-size: 1.5em; } }
 
 /* Aqui acaba o header*/
-/* Aqui começa a seção Sobre */
-.sobre .avatar img {
-  float: left; }
-.sobre p {
-  color: #242122;
-  margin-right: 1.6rem;
-  font-size: 1em;
-  text-align: left; }
-  .sobre p .tecnologias {
-    font-weight: bold; }
+  /* Aqui começa a seção Sobre */
+.sobre {
+  background-color: #dedede; }
+  .sobre h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 50px;
+    margin-left: 30px;
+    padding: 10px 0;
+    color: #242122; }
+  .sobre p {
+    color: #242122;
+    margin: 0 5%;
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: left; }
+    .sobre p .tecnologias {
+      font-weight: bold; }
+    .sobre p .link-alura {
+      color: #156ca6; }
+  .sobre .avatar img {
+    clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0 10px 5px -13px; }
 
 /* Aqui acaba a seção Sobre */
 /* Aqui começa a sessão Projetos */
