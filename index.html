@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eder Sato</title>
+  <title>Eder R. Sato</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/estilos.css">
   <link
@@ -16,9 +16,7 @@
 <body>
   <header>
     <div class="header">
-      <h1 class="site-title">Eder Sato</h1>
-      <h2 class="site-subtitle">Web designer</h2>
-      <h2 class="site-subtitle">Jr. Front-end</h2>
+      <h1 class="site-title">Eder R. Sato</h1>
     </div>
     <nav class="menu">
       <ul>
@@ -30,6 +28,22 @@
       </ul>
     </nav>
 
+    <div class="topnav">
+      <nav id="menu-mobile">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#conhecimentos">Conhecimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+
+
 
   </header>
   <main>
@@ -38,19 +52,17 @@
       <figure class="avatar">
         <img src="https://pbs.twimg.com/profile_images/1261756506342592512/uxrsfCTa_400x400.jpg" alt="Eder Sato">
         <p>
-          Meu nome é Eder Sato, tenho 25 anos, sou webdesigner e estou migrando para a programação Front/Back End.
+          Meu nome é Eder da Rosa Sato, tenho 25 anos, sou webdesigner e estou migrando para a programação Front/Back
+          End.
           Atualmente, sou estudante de Design Gráfico.
           <br><br>
           Nos ultimos meses, desenvolvi algumas aplicações e venho aprimorando meus conhecimentos, dentre elas se
-          destacando
-          as linguagens
+          destacando as linguagens
           <br><br>
           <a class="tecnologias">HTML, CSS, Sass, Javascript, Vue.Js, React/Native.</a>
           <br><br>
           Estou pronto para novos projetos e adquirir mais conhecimento na área de desenvolvimento.
           <br><br>
-          Esse site foi construído durante a <a class="link-alura"
-            href="https://www.alura.com.br/imersao-css">#imersãoCSS da Alura</a>
         </p>
       </figure>
     </section>
@@ -58,6 +70,16 @@
     <section class="projetos" id="projetos">
       <h2>Projetos</h2>
       <div class="jogos">
+        <figure>
+          <a href="https://satoflix.vercel.app">
+            <img class="imagem" src="img/satoflix2.png" alt="Hipsta">
+          </a>
+        </figure>
+        <figure>
+          <a href="https://editor.p5js.org/Eder_Sato/present/SYVpVFLIz">
+            <img class="imagem" src="img/hipsta2.png" alt="Hipsta">
+          </a>
+        </figure>
         <figure>
           <a href="https://editor.p5js.org/Eder_Sato/present/AZRXmB2sM">
             <img class="imagem" src="img/pong2.png" alt="Pong">
@@ -68,24 +90,19 @@
             <img class="imagem" src="img/freeway2.png" alt="Freeway">
           </a>
         </figure>
-        <figure>
-          <a href="https://editor.p5js.org/Eder_Sato/present/SYVpVFLIz">
-            <img class="imagem"  src="img/hipsta2.png" alt="Hipsta">
-          </a>
-        </figure>
       </div>
     </section>
 
     <section class="conhecimentos" id="conhecimentos">
       <h2>Conhecimentos</h2>
       <div class="logos">
-        <a target="_blank" href="">
+        <a target="_blank">
           <i class="fas fa-code"></i>
         </a>
-        <a target="_blank" href="">
+        <a target="_blank">
           <i class="fas fa-pencil-ruler"></i>
         </a>
-        <a target="_blank" href="">
+        <a target="_blank">
           <i class="fas fa-language"></i>
         </a>
       </div>
@@ -129,7 +146,7 @@
           <p>edersato@gmail.com</p>
         </div>
         <div class="map">
-          <a href="">
+          <a>
             <i class="fas fa-map-marker-alt"></i>
           </a>
           <p>Curitiba - PR</p>
@@ -156,7 +173,9 @@
         </a>
       </div>
     </section>
+
   </footer>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
