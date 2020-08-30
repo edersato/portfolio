@@ -1,9 +1,13 @@
 @charset "UTF-8";
 body {
-  font-family: 'IBM Plex Serif', serif; }
+  font-family: 'IBM Plex Serif', serif;
+  max-width: 1440px;
+  margin: 0 auto; }
   @media (max-width: 768px) {
     body {
       font-size: 16px; } }
+  body main {
+    background-color: #dedede; }
 
 /* Aqui termina as configurações gerais */
 /* Aqui começa o header */
@@ -14,26 +18,17 @@ header {
 
 .menu {
   background-color: #85c1e9;
-  margin-top: 1%;
-  margin-right: 5%; }
+  margin: 1em; }
   @media (max-width: 768px) {
     .menu {
-      margin-top: 1%;
-      margin-bottom: 1%; } }
+      display: none; } }
   .menu ul {
     display: flex; }
-    @media (max-width: 768px) {
-      .menu ul {
-        flex-direction: column;
-        text-align: right; } }
   .menu li {
     list-style: none; }
-    @media (max-width: 768px) {
-      .menu li {
-        padding: 9px 0; } }
   .menu a {
     color: #242122;
-    font-size: 16px;
+    font-size: 1em;
     padding: 9px;
     transition: background-color 1.5s, color 0.8s;
     text-decoration: none; }
@@ -41,68 +36,71 @@ header {
       background-color: #242122;
       color: #85c1e9; }
 
+.topnav {
+  display: none; }
+  @media (max-width: 768px) {
+    .topnav {
+      display: block;
+      position: relative; } }
+  .topnav #menu-mobile {
+    display: none; }
+  .topnav a {
+    color: #242122;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block; }
+  .topnav .icon {
+    color: #242122;
+    display: block;
+    position: absolute;
+    font-size: 1.5em;
+    right: 0;
+    top: 0; }
+
 .site-title {
   color: #242122;
   font-family: 'Bellota Text', cursive;
-  font-size: 50px;
-  margin-top: 2%;
-  margin-left: 30px; }
-  @media (max-width: 768px) {
-    .site-title {
-      margin-top: 5%;
-      font-size: 40px; } }
-
-.site-subtitle {
-  color: #242122;
-  font-family: 'Big Shoulders Display', cursive;
   font-size: 2em;
-  line-height: 1.5em;
-  margin-left: 30px; }
-  @media (max-width: 768px) {
-    .site-subtitle {
-      font-size: 1.5em; } }
+  padding: .2em 0;
+  margin-left: 1em; }
 
 /* Aqui acaba o header*/
 /* Aqui começa a seção Sobre */
-.sobre {
-  background-color: #dedede; }
-  .sobre h2 {
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 50px;
-    margin-left: 30px;
-    padding: 10px 0;
-    color: #242122; }
-  .sobre p {
-    color: #242122;
-    margin: 0 5%;
-    padding: 10px 0;
-    font-size: 16px;
-    text-align: left; }
-    .sobre p .tecnologias {
-      font-weight: bold; }
-    .sobre p .link-alura {
-      color: #156ca6; }
-  .sobre .avatar img {
-    clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin: 0 10px 5px -13px; }
+.sobre h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 50px;
+  color: #242122;
+  margin-left: 30px;
+  padding: 10px 0; }
+.sobre .avatar img {
+  clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+  width: 200px;
+  height: 200px;
+  margin-left: -1.4em;
+  margin-right: 1em;
+  float: left; }
+.sobre p {
+  color: #242122;
+  margin-right: 1.6rem;
+  font-size: 1em;
+  text-align: left; }
+  .sobre p .tecnologias {
+    font-weight: bold; }
+
 /* Aqui acaba a seção Sobre */
 /* Aqui começa a sessão Projetos */
-.projetos {
-  background-color: #dedede; }
-  .projetos h2 {
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 50px;
-    color: #242122;
-    margin-left: 30px;
-    padding: 10px 0; }
+.projetos h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 50px;
+  color: #242122;
+  margin-left: 30px;
+  padding: 10px 0; }
 
 .jogos {
   display: flex;
   justify-content: space-evenly; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .jogos {
       flex-wrap: wrap;
       justify-content: space-around; } }
@@ -118,36 +116,31 @@ header {
 
 /* Aqui acaba a seção Projetos */
 /* Aqui começa a Seção Conhecimentos */
-.conhecimentos {
-  background-color: #dedede; }
-
 .conhecimentos h2 {
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   font-size: 50px;
   color: #242122;
   margin-left: 30px;
   padding: 10px 0; }
-
-.logos {
+.conhecimentos .logos {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px; }
-  .logos a {
+  .conhecimentos .logos a {
     color: #242122;
     font-size: 50px;
     text-decoration: none; }
-
-.container {
+.conhecimentos .container {
   display: flex; }
-  .container ul {
-    width: 35%; }
-    .container ul li {
+  .conhecimentos .container ul {
+    width: 33%; }
+    .conhecimentos .container ul li {
       position: relative;
       list-style: none;
       margin: 0 30px 30px 30px;
       font-family: 'Big Shoulders Display', cursive;
       font-weight: bold; }
-      .container ul li::before {
+      .conhecimentos .container ul li::before {
         content: "";
         position: absolute;
         top: calc(100% + 10px);
@@ -156,7 +149,7 @@ header {
         height: 15px;
         background-color: rgba(36, 33, 34, 0.5);
         border-radius: 1000px; }
-      .container ul li::after {
+      .conhecimentos .container ul li::after {
         content: "";
         position: absolute;
         top: calc(100% + 10px);
@@ -168,57 +161,57 @@ header {
         animation-duration: 5.0s;
         animation-timing-function: ease;
         animation-fill-mode: forwards; }
-    .container ul .html:after {
+    .conhecimentos .container ul .html:after {
       animation-name: html; }
 @keyframes html {
   to {
     width: 64%; } }
-    .container ul .css:after {
+    .conhecimentos .container ul .css:after {
       animation-name: css; }
 @keyframes css {
   to {
     width: 59%; } }
-    .container ul .javascript:after {
+    .conhecimentos .container ul .javascript:after {
       animation-name: java; }
 @keyframes java {
   to {
     width: 55%; } }
-    .container ul .react:after {
+    .conhecimentos .container ul .react:after {
       animation-name: react; }
 @keyframes react {
   to {
     width: 34%; } }
-    .container ul .vue:after {
+    .conhecimentos .container ul .vue:after {
       animation-name: vue; }
 @keyframes vue {
   to {
     width: 30%; } }
-    .container ul .photoshop:after {
+    .conhecimentos .container ul .photoshop:after {
       animation-name: photoshop; }
 @keyframes photoshop {
   to {
     width: 70%; } }
-    .container ul .illustrator:after {
+    .conhecimentos .container ul .illustrator:after {
       animation-name: illustrator; }
 @keyframes illustrator {
   to {
     width: 60%; } }
-    .container ul .indesign:after {
+    .conhecimentos .container ul .indesign:after {
       animation-name: indesign; }
 @keyframes indesign {
   to {
     width: 60%; } }
-    .container ul .corel:after {
+    .conhecimentos .container ul .corel:after {
       animation-name: corel; }
 @keyframes corel {
   to {
     width: 55%; } }
-    .container ul .port:after {
+    .conhecimentos .container ul .port:after {
       animation-name: port; }
 @keyframes port {
   to {
     width: 100%; } }
-    .container ul .eng:after {
+    .conhecimentos .container ul .eng:after {
       animation-name: eng; }
 @keyframes eng {
   to {
