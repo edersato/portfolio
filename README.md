@@ -1,2 +1,1 @@
-# portfolio
-Este site foi criado durante a Imersão CSS da Alura
+Portfólio pessoal de habilidades, onde insiro meus projetos e contatos profissionais
