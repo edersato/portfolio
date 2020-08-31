@@ -106,13 +106,12 @@ header {
       justify-content: space-around; } }
 
 .imagem {
-  width: 250px;
-  height: 180px; }
+  width: 210px;
+  height: 150px; }
   @media (max-width: 1024px) {
     .imagem {
       margin-bottom: 20px;
-      width: 210px;
-      height: 150px; } }
+    } }
 
 /* Aqui acaba a seção Projetos */
 /* Aqui começa a Seção Conhecimentos */
