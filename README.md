@@ -1,2 +1,2 @@
 # portfolio
-Site utilizando HTML e CSS, ensinados na ImersãoCSS da Alura
+Este site foi criado durante a Imersão CSS da Alura
