@@ -55,7 +55,7 @@ header {
     display: block;
     position: absolute;
     font-size: 1.5em;
-    right: 0.5em;
+    right: 0;
     top: 0; }
 
 .site-title {
@@ -110,8 +110,7 @@ header {
   height: 150px; }
   @media (max-width: 1024px) {
     .imagem {
-      margin-bottom: 20px;
-    } }
+      margin-bottom: 20px; } }
 
 /* Aqui acaba a seção Projetos */
 /* Aqui começa a Seção Conhecimentos */
