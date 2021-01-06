@@ -74,15 +74,14 @@ header {
   margin-left: 30px;
   padding: 10px 0; }
 .sobre .avatar img {
-  clip-path: polygon(86% 0, 100% 55%, 83% 100%, 20% 100%, 39% 54%, 25% 0);
+  clip-path: circle(50%);
   width: 200px;
   height: 200px;
-  margin-left: -1.4em;
-  margin-right: 1em;
+  margin: 0 1.2em;
   float: left; }
 .sobre p {
   color: #242122;
-  margin-right: 1.6rem;
+  margin: 0 1.6rem;
   font-size: 1em;
   text-align: left; }
   .sobre p .tecnologias {
@@ -168,22 +167,22 @@ header {
       animation-name: css; }
 @keyframes css {
   to {
-    width: 59%; } }
+    width: 62%; } }
     .conhecimentos .container ul .javascript:after {
       animation-name: java; }
 @keyframes java {
   to {
-    width: 55%; } }
+    width: 59%; } }
     .conhecimentos .container ul .react:after {
       animation-name: react; }
 @keyframes react {
   to {
-    width: 34%; } }
+    width: 45%; } }
     .conhecimentos .container ul .vue:after {
       animation-name: vue; }
 @keyframes vue {
   to {
-    width: 30%; } }
+    width: 45%; } }
     .conhecimentos .container ul .photoshop:after {
       animation-name: photoshop; }
 @keyframes photoshop {
@@ -203,7 +202,12 @@ header {
       animation-name: corel; }
 @keyframes corel {
   to {
-    width: 55%; } }
+    width: 50%; } }
+    .conhecimentos .container ul .figma:after {
+      animation-name: figma; }
+@keyframes figma {
+  to {
+    width: 40%; } }
     .conhecimentos .container ul .port:after {
       animation-name: port; }
 @keyframes port {
