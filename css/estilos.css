@@ -96,20 +96,75 @@ header {
   margin-left: 30px;
   padding: 10px 0; }
 
-.jogos {
+.projects {
   display: flex;
   justify-content: space-evenly; }
   @media (max-width: 900px) {
-    .jogos {
+    .projects {
       flex-wrap: wrap;
       justify-content: space-around; } }
 
-.imagem {
+.view {
   width: 180px;
-  height: 130px; }
-  @media (max-width: 1024px) {
-    .imagem {
-      margin-bottom: 20px; } }
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+  .view img {
+    display: block;
+    position: relative; }
+  .view .imagem {
+    width: 180px;
+    height: 130px; }
+    @media (max-width: 1024px) {
+      .view .imagem {
+        margin-bottom: 20px; } }
+  .view h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #242122;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    padding: 5px;
+    background: #85c1e9;
+    margin: 5px; }
+  .view p {
+    font-style: italic;
+    font-size: 12px;
+    color: #242122;
+    margin-bottom: 1em;
+    text-align: center; }
+  .view a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
+    background: #85c1e9;
+    color: #242122; }
+
+.view .text-box {
+  width: 180px;
+  height: 130px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; }
+
+.description img {
+  transition: all 0.8s ease-in-out; }
+.description .text-box {
+  background-color: rgba(170, 170, 170, 0.3);
+  transform: translateY(300px) translateX(-300px);
+  transition: all 0.8s ease-in-out; }
+.description p {
+  transition: all 0.2s linear; }
+.description:hover .text-box {
+  transform: translateY(0px); }
+.description:hover img {
+  transform: translateY(-300px) translateX(300px);
+  transition-delay: 0.1s; }
+.description:hover p {
+  transition-delay: 0.4s; }
 
 /* Aqui acaba a seção Projetos */
 /* Aqui começa a Seção Conhecimentos */
