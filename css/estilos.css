@@ -98,6 +98,7 @@ header {
 
 .projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly; }
   @media (max-width: 900px) {
     .projects {
@@ -191,7 +192,8 @@ header {
       list-style: none;
       margin: 0 30px 30px 30px;
       font-family: 'Big Shoulders Display', cursive;
-      font-weight: bold; }
+      font-weight: bold;
+      letter-spacing: 0.5px; }
       .conhecimentos .container ul li::before {
         content: "";
         position: absolute;
