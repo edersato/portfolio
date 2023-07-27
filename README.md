@@ -1,1 +1,3 @@
-Portfólio pessoal de habilidades, onde insiro meus projetos e contatos profissionais.
+# Portfólio
+
+Portfólio de projetos e habilidades
