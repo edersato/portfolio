@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link>
-    </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -18,17 +15,7 @@ html {
   text-align: center;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #b22222;
-    }
-  }
+h2 {
+  color: #a75efa;
 }
 </style>
