@@ -15,7 +15,42 @@ html {
   text-align: center;
 }
 
-h2 {
-  color: #a75efa;
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4591C4 #242122;
 }
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+
+  &::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #242122;
+  
+    &:hover {
+      background-color: #242122;
+    }
+  
+    &:active {
+      background-color: #242122;
+    }
+  }
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4591C4;
+
+  &:hover {
+    background-color: #306589;
+  }
+
+  &:active {
+    background-color: #4591C4;
+  }
+}
+
 </style>

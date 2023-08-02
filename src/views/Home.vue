@@ -4,6 +4,7 @@
       <HeadNav />
     </header>
     <main>
+      <Presentation />
       <About />
       <Knowledge />
       <Projects />
@@ -17,6 +18,7 @@
 
 <script>
 import HeadNav from '../components/shared/HeadNav.vue'
+import Presentation from '../components/homePage/Presentation.vue'
 import About from '../components/homePage/About.vue'
 import Knowledge from '../components/homePage/Knowledge.vue'
 import Projects from '../components/homePage/Projects.vue'
@@ -25,14 +27,18 @@ import FooNav from '../components/shared/FooNav.vue'
 
 export default {
   components: {
-    HeadNav, About, Knowledge, Projects, Contact, FooNav,
+    HeadNav, Presentation, About, Knowledge, Projects, Contact, FooNav,
   }
 }
 </script>
 
-<style lang="scss" scoped>
-h1, h2 {
-  color: #a75efa;
+<style lang="scss">
+
+@mixin heading {
+  h1, h2, h3, h4, h5, h6 {
+    color: #5ebcfa;
+  }
 }
 
+@include heading()
 </style>

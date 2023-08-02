@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="md" type="dark" variant="transparent">
+    <b-navbar toggleable="lg" type="dark" variant="transparent">
       <b-navbar-brand href="#">Eder da Rosa Sato</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -23,18 +23,15 @@ export default {};
 
 <style lang="scss" scoped>
 
-#nav-collapse {
-    justify-content: right;
-    font-size: 1.2rem;
-}
-
 nav {
   padding: 5px 30px;
 
   a {
     font-weight: 400;
+    font-size: 1.5rem;
     text-decoration: none;
     transition: .3s ease-in;
+    margin: 0 0.5em;
 
     &:hover {
       transition: .2s;
@@ -42,10 +39,15 @@ nav {
       letter-spacing: .5px;
 
       &::before {
-        content: "►";
+        content: "► ";
       }
     }
   }
+}
+
+#nav-collapse {
+    justify-content: right;
+    font-size: 1.2rem;
 }
 
 </style>
