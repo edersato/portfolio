@@ -6,7 +6,6 @@
     <main>
       <Presentation />
       <About />
-      <Knowledge />
       <Projects />
       <Contact />
     </main>
@@ -20,14 +19,13 @@
 import HeadNav from '../components/shared/HeadNav.vue'
 import Presentation from '../components/homePage/Presentation.vue'
 import About from '../components/homePage/About.vue'
-import Knowledge from '../components/homePage/Knowledge.vue'
 import Projects from '../components/homePage/Projects.vue'
 import Contact from '../components/homePage/Contact.vue'
 import FooNav from '../components/shared/FooNav.vue'
 
 export default {
   components: {
-    HeadNav, Presentation, About, Knowledge, Projects, Contact, FooNav,
+    HeadNav, Presentation, About, Projects, Contact, FooNav,
   }
 }
 </script>

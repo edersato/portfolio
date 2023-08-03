@@ -1,5 +1,7 @@
 <template>
-  <h2>Projetos</h2>
+  <section>
+    <h2 class="m-5">Projetos</h2>
+  </section>
 </template>
 
 <script>

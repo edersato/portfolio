@@ -1,5 +1,7 @@
 <template>
-  <h2>Contato</h2>
+  <section>
+    <h2 class="m-5">Contato</h2>
+  </section>
 </template>
 
 <script>

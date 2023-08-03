@@ -8,7 +8,6 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item href="#about">Sobre</b-nav-item>
-          <b-nav-item href="#knowledge" >Conhecimentos</b-nav-item>
           <b-nav-item href="#projects" >Projetos</b-nav-item>
           <b-nav-item href="#contact" >Contato</b-nav-item>
         </b-navbar-nav>
