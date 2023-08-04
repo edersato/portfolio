@@ -36,8 +36,16 @@ export default {
   justify-content: right;
 
   p {
-    padding: 1rem;
-    color: white;
+    padding: .2rem 1rem;
+    margin: 1rem;
+    background: #5ebcfa;
+    border-radius: 1.8rem;
+    color: black;
+    font-weight: 400;
+
+    &:hover {
+      font-weight: 500;
+    }
   }
 }
 

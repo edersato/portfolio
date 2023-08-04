@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="about">
     <h1 class="mt-5">Sobre</h1>
     <h4 class="m-5">
       Um breve resumo de quem sou, o que faço e meus conhecimentos técnicos
@@ -53,7 +53,8 @@ export default {
 <style lang="scss" scoped>
 .aboutSection {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 2em;
   margin: 0 5em;
 
   p {
